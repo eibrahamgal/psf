@@ -24,7 +24,7 @@ const Image = styled.div(props => [
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
 const Subtitle = tw.div`font-bold tracking-wide text-secondary-100`;
 const Title = tw.h4`text-3xl font-bold text-gray-900`;
-const Description = tw.p`mt-2 text-sm leading-loose`;
+const Description = tw.p`mt-2 text-justify text-lg leading-loose`;
 const Link = tw.a`inline-block mt-4 text-sm text-blue-800 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-blue-800`;
 
 const SvgDotPattern1 = tw(
@@ -44,31 +44,41 @@ export default () => {
   const cards = [
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1550699026-4114bbf4fb49?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=632&q=80",
+        "https://images.pexels.com/photos/4226205/pexels-photo-4226205.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
       subtitle: "Paid",
-      title: "Loachella, NYC",
+      title: "Radiografia",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-      url: "https://timerse.com"
+        "La Policlinica San Felipe se enorgullece de ofrecer a nuestros pacientes un servicio de radiografía de alta calidad y avanzada tecnología. Nuestro compromiso es proporcionar atención médica integral y precisa, y la radiografía es una herramienta fundamental en el diagnóstico y tratamiento de diversas condiciones médicas.",
+        url: "https://timerse.com"
     },
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1543423924-b9f161af87e4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80",
+        "https://dramarisolledesma.com/wp-content/uploads/2022/10/Dra_Marisol_Ledesma_Control_Prenatal_Embarazada.jpg",
       subtitle: "Free",
-      title: "Rock In Rio, Upstate",
+      title: "Control Prenatal",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Nuestro equipo de obstetras y ginecólogos altamente calificados trabaja en estrecha colaboración con las futuras madres para proporcionar un seguimiento prenatal integral y personalizado. Cada embarazo es único, y nuestros profesionales de la salud están aquí para brindar orientación, monitoreo y apoyo en cada paso del camino.",
       url: "https://timerse.com"
     },
 
     {
       imageSrc:
-        "https://images.unsplash.com/photo-1509824227185-9c5a01ceba0d?ixlib=rb-1.2.1&auto=format&fit=crop&w=658&q=80",
-      subtitle: "Exclusive",
-      title: "Lollapalooza, Manhattan",
+        "https://images.pexels.com/photos/356040/pexels-photo-356040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      subtitle: "Free",
+      title: "Laboratorio Policlinica San Felipe",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "En colaboración con el Laboratorio Policlinica San Felipe, contamos con un equipo de profesionales altamente capacitados y equipamiento de vanguardia que nos permite ofrecer una amplia gama de servicios de laboratorio. Esta alianza nos permite proporcionarte resultados de alta calidad de manera eficiente y oportuna.",
+      url: "https://timerse.com"
+    },
+
+    {
+      imageSrc:
+        "https://content-files.shure.com/BlogPosts/how-can-i-modernize-my-conference-room-equipment/images/en/how-can-i-modernize-my-conference-room-equipment_header.png",
+      subtitle: "Exclusive",
+      title: "Sala de Conferencias",
+      description:
+        "En la Policlinica San Felipe, no solo nos esforzamos por brindar atención médica de alta calidad, sino que también nos preocupamos por fomentar el aprendizaje y la colaboración en el campo de la salud. Es por eso que estamos orgullosos de ofrecer una moderna Sala de Conferencias que está a disposición de profesionales de la salud, instituciones académicas y particulares que deseen hacer uso de la misma.",
       url: "https://timerse.com"
     }
   ];
@@ -77,10 +87,7 @@ export default () => {
     <Container>
       <SingleColumn>
         <HeadingInfoContainer>
-          <HeadingTitle>Popular Events</HeadingTitle>
-          <HeadingDescription>
-            Here are some of the most popular events in New York City curated by professionals.
-          </HeadingDescription>
+          <HeadingTitle>Servicios</HeadingTitle>
         </HeadingInfoContainer>
 
         <Content>
@@ -88,10 +95,8 @@ export default () => {
             <Card key={i} reversed={i % 2 === 1}>
               <Image imageSrc={card.imageSrc} />
               <Details>
-                <Subtitle>{card.subtitle}</Subtitle>
                 <Title>{card.title}</Title>
                 <Description>{card.description}</Description>
-                <Link href={card.url}>See Event Details</Link>
               </Details>
             </Card>
           ))}

@@ -10,12 +10,12 @@ import defaultCardImage from "images/shield-icon.svg";
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
-import SupportIconImage from "images/support-icon.svg";
-import ShieldIconImage from "images/shield-icon.svg";
-import CustomizeIconImage from "images/customize-icon.svg";
-import FastIconImage from "images/fast-icon.svg";
-import ReliableIconImage from "images/reliable-icon.svg";
-import SimpleIconImage from "images/simple-icon.svg";
+import PrimerItem from "images/iconos/primeros-auxilios.png";
+import SegundoItem from "images/iconos/atencion-primaria.png";
+import TercerItem from "images/iconos/cuidado-prenatal.png";
+import CuartoItem from "images/iconos/especialista.png";
+import QuintoItem from "images/iconos/farmacia.png";
+import SextoItem from "images/iconos/radiografia.png";
 
 const Container = tw.div`relative`;
 
@@ -37,7 +37,7 @@ const Card = styled.div`
   .imageContainer {
     ${tw`border text-center rounded-full p-5 flex-shrink-0`}
     img {
-      ${tw`w-6 h-6`}
+      ${tw`w-12 h-12`}
     }
   }
 
@@ -58,7 +58,7 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
   ${tw`pointer-events-none absolute right-0 bottom-0 w-64 opacity-25 transform translate-x-32 translate-y-48 `}
 `;
 
-export default ({ cards = null, heading = "Amazing Features", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
+export default ({ cards = null, heading = "Nuestros Servicios", subheading = "Features", description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
    *  1) imageSrc - the image shown at the top of the card
@@ -69,15 +69,30 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      imageSrc: PrimerItem,
+      title: "Primeros Auxilios",
+      description: "Contamos con servicios de primeros auxilios para tratar lesiones y emergencias médicas menores."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    { imageSrc: SegundoItem,
+      title: "Atención Primaria",
+    description: "Ofrecemos servicios de atención primaria que incluyen exámenes físicos, pruebas de diagnóstico, tratamiento de enfermedades menores y remisiones a especialistas si es necesario." 
+    },
+    { imageSrc: TercerItem, 
+      title: "Control Prenatal",
+    description: "Ofrecemos servicios de control prenatal para garantizar la salud y el bienestar de la madre y el bebé durante todo el embarazo." 
+    },
+    { imageSrc: CuartoItem, 
+      title: "Especialistas Medicos",
+    description: "Contamos con los especialistas mas preparados de la region en: Cardiología, dermatología, gastroenterología, ginecología, pediatría, psiquiatría, entre otras." 
+    },
+    { imageSrc: QuintoItem, 
+      title: "Farmacia",
+    description: "Contamos con una farmacia completa que ofrece una amplia gama de medicamentos recetados. Nuestros farmacéuticos están disponibles para responder preguntas y brindar consejos sobre los medicamentos y los tratamientos adecuados."
+     },
+    { imageSrc: SextoItem, 
+      title: "Radiografia",
+    description: "Ofrecemos servicios de radiografía para ayudar en el diagnóstico y tratamiento de lesiones y enfermedades. Nuestros equipos de radiografía de alta calidad permiten una precisión y detalle excepcionales para garantizar un tratamiento adecuado y efectivo" 
+    }
   ];
 
   if (!cards) cards = defaultCards;
@@ -85,9 +100,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   return (
     <Container>
       <ThreeColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
         <VerticalSpacer />
         {cards.map((card, i) => (
           <Column key={i}>
