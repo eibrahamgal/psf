@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/static/js/main.09255b20.js",
+    "static/media/contacto.jpg": "/static/media/contacto.f4c48b7c4874a72208c0.jpg",
+    "static/media/Sairis-Salom.png": "/static/media/Sairis-Salom.25621218693e1af9b6a7.png",
+    "static/media/Wilmaris-Vegas.png": "/static/media/Wilmaris-Vegas.885d77861fa0cdf071bf.png",
+    "static/media/home.jpg": "/static/media/home.0255ab9dc3b7bdcf4265.jpg",
+    "static/media/leonor-labrador.png": "/static/media/leonor-labrador.5d3afb4d25dd9fec0993.png",
+    "static/media/logo.png": "/static/media/logo.a9c93fe6fded0c180ccf.png",
+    "static/media/aranyelis-riera.png": "/static/media/aranyelis-riera.fd54122f150e27e39580.png",
+    "static/media/emilia-hernandez.png": "/static/media/emilia-hernandez.9955e6ddcda58627a45d.png",
+    "static/media/pablo-moreno.png": "/static/media/pablo-moreno.a3167be368e7a970e116.png",
+    "static/media/checre-maluff.png": "/static/media/checre-maluff.d3f6a7d7029dc2fb5776.png",
+    "static/media/jorge-rodriguez.png": "/static/media/jorge-rodriguez.de695332cfadd2347ceb.png",
+    "static/media/antonio-torres.png": "/static/media/antonio-torres.1df6663b091ec11fca1c.png",
+    "static/media/jendry-martinez.png": "/static/media/jendry-martinez.4f0d186a2c6c9985d759.png",
+    "static/media/dot-pattern.svg": "/static/media/dot-pattern.e52f8ce47afe6f572aef5cbf0389564c.svg",
+    "static/media/mail.svg": "/static/media/mail.44215d3a70065dfb20300c2cb1a3cf82.svg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.468d4a9b1ddbfc30eeba7f4bc7d769ae.svg",
+    "index.html": "/index.html",
+    "static/media/Instagram.svg": "/static/media/Instagram.ab649db109e1678f7a8cda34fc4a55af.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.df4cf2e9b3cfe3a731af5f4b2e455a02.svg",
+    "static/media/twitter-icon.svg": "/static/media/twitter-icon.82807cb8b91086f2ad77332f06cf0501.svg",
+    "static/media/menu.svg": "/static/media/menu.644fa295fdd5f662e642ba6bfb084239.svg",
+    "static/media/x.svg": "/static/media/x.6c9a4ba71a333be7b021fc6da39d864c.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.2bde50f8628b8391181ec5755a1a7f4c.svg",
+    "main.09255b20.js.map": "/static/js/main.09255b20.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.09255b20.js"
+  ]
+}
